@@ -1,0 +1,10 @@
+
+
+{
+  "name": "Battery",
+    "type": "privileged",
+  "description": "Battery ",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icons/battery.png"
+  

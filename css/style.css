@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Archangelsk";
+  src: url("/css/arch.ttf") format("truetype");
+}
+
+html, body {
+  margin: 0px;
+  overflow: hidden;
+  height: 100%;
+  font-family: "Archangelsk", "Noto Sans", NotoSans, sans-serif;
+  background: #020808;
+  color: #4dff17;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+
+
+
+body {
+  width: 100%;
+  height: inherit;
+}
+
+.text-indicator {
+  display: inline-block;
+  color: #4dff17;
+  background-color: gray;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.75));
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px black;
+  border: 1px #4dff17;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.text-indicator p {
+  margin: 0;
+}
+
+h1, body > p {
+  margin-left: 1rem;
+}
+
+
+/* || visual battery indicator */
+
+.icon-indicator {
+  position: relative;
+  width: 4rem;
+  height: 3.1rem;
+  background-color: #4dff17;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2),rgba(0,0,0,0.55) 70%);
+  margin: 1rem;
+  border-radius: 2px;
+}
+
+#battery-top {
+  position: absolute;
+  height: 1.3rem;
+  width: 0.7rem;
+  top: 0.9rem;
+  right: -0.7rem;
+  background-color: #4dff17;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1),rgba(0,0,0,0.55) 70%);
+  border-radius: 0 2px 2px 0;
+}
+
+#battery-charge {
+  position: absolute;
+  left: 0;
+  height: 3.1rem;
+  background-color: #4dff17;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,0.3) 70%);
+}
+
+#battery-charging {
+  position: absolute;
+  left: 0;
+  height: 3.1rem;
+  width: 4rem;
+  background: url(/icons/battery.svg) center no-repeat;
+  background-size: 60% 70%;
+}
